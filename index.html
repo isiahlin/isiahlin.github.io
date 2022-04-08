@@ -1,879 +1,538 @@
-
-
 <!DOCTYPE html>
-<html lang="zh-CN" data-default-color-scheme=auto>
-
-
-
+<html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
-  <link rel="icon" href="/img/favicon.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  
-  <meta name="theme-color" content="#2f4154">
-  <meta name="description" content="">
-  <meta name="author" content="I-Lin">
-  <meta name="keywords" content="">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Isiah&#39;s ZONE">
-<meta property="og:url" content="https://isiahlin.github.io/index.html">
-<meta property="og:site_name" content="Isiah&#39;s ZONE">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:author" content="I-Lin">
-<meta name="twitter:card" content="summary_large_image">
-  
-  <title>Isiah&#39;s ZONE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="Keep Team">
+    
+    <title>
+        
+        Keep Theme
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
 
-  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
+    <link rel="shortcut icon" href="/images/logo.svg">
+    
+<link rel="stylesheet" href="/css/font-awesome.min.css">
 
-
-
-<!-- 主题依赖的图标库，不要自行修改 -->
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
-
-
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
-
-
-<link  rel="stylesheet" href="/css/main.css" />
-
-<!-- 自定义样式保持在最底部 -->
-
-
-  <script id="fluid-configs">
-    var Fluid = window.Fluid || {};
-    var CONFIG = {"hostname":"isiahlin.github.io","root":"/","version":"1.8.12","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname"}},"search_path":"/local-search.xml"};
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {};
+    KEEP.hexo_config = {"hostname":"isiahlin.github.io","root":"/","language":"zh-CN"};
+    KEEP.theme_config = {"toc":{"enable":false,"number":false,"expand_all":false,"init_open":false},"style":{"primary_color":"#0066CC","avatar":"/images/avatar.svg","favicon":"/images/logo.svg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":false,"scale":false},"first_screen":{"enable":false,"background_img":"/images/bg.svg","description":"Keep writing and Keep loving."},"scroll":{"progress_bar":{"enable":false},"percent":{"enable":false}}},"local_search":{"enable":false,"preload":false},"code_copy":{"enable":false,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.5"};
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"};
   </script>
-  <script  src="/js/utils.js" ></script>
-  <script  src="/js/color-schema.js" ></script>
 <meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
-  <header style="height: 100vh;">
-    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
-  <div class="container">
-    <a class="navbar-brand" href="/">
-      <strong>Isiah&#39;s ZONE</strong>
-    </a>
-
-    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <div class="animated-icon"><span></span><span></span><span></span></div>
-    </button>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto text-center">
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/">
-                <i class="iconfont icon-home-fill"></i>
-                首页
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/archives/">
-                <i class="iconfont icon-archive-fill"></i>
-                归档
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/categories/">
-                <i class="iconfont icon-category-fill"></i>
-                分类
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/tags/">
-                <i class="iconfont icon-tags-fill"></i>
-                标签
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/about/">
-                <i class="iconfont icon-user-fill"></i>
-                关于
-              </a>
-            </li>
-          
-        
-        
-          <li class="nav-item" id="search-btn">
-            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
-              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
-            </a>
-          </li>
-        
-        
-          <li class="nav-item" id="color-toggle-btn">
-            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
-                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-</nav>
-
-    <div class="banner" id="banner" parallax=true
-         style="background: url('/images/homepage_banner.png') no-repeat center center;
-           background-size: cover;">
-      <div class="full-bg-img">
-        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
-          <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="只要心够决">
-              
-            </span>
-
-            
-          </div>
-
-          
-            <div class="scroll-down-bar">
-              <i class="iconfont icon-arrowdown"></i>
-            </div>
-          
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <main>
+<div class="progress-bar-container">
     
-      <div class="container nopadding-x-md">
-        <div class="py-5" id="board"
-          style=margin-top:0>
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
+
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            <header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+            <a class="logo-title" href="/">
+                Keep Theme
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class="active"
+                               href="/"
+                            >
+                                首页
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                归档
+                            </a>
+                        </li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class="active"
+                       href="/">首页</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives">归档</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="home-content-container fade-in-down-animation">
+    <ul class="home-article-list">
+        
+            <li class="home-article-item">
+
                 
 
+                <h3 class="home-article-title">
+                    <a href="/p/ed45e794.html">
+                        湖人赛季观察11: 两安东尼合砍61分 率队加时胜黄蜂
+                    </a>
+                </h3>
 
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/p/f6e8a005.html" target="_self">
-          湖人赛季观察12
-        </a>
-      </h1>
+                <div class="home-article-content markdown-body">
+                    
+                        湖人和黄蜂最近都有点烦，湖人是被雷霆逆转后又遭开拓者羞辱，令人怀疑他们是否能够挺过这一关，黄蜂则是客场四连败，11 月到现在都还没赢过球呢，大家都挺想赢的。
+最终还是湖人挺到了最后，两位安东尼接管了比赛，帮助球队以 126-123 拿下了这场胜利。
+...
+                    
+                </div>
 
-      <p class="index-excerpt">
-        <a href="/p/f6e8a005.html" target="_self">
-          
-          
-            
-          
-          
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
+                <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Tue Nov 09 2021 20:19:39 GMT+0800">2021-11-09</span></span>
         
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-04-08 13:35" pubdate>
-              2022-04-08
-            </time>
-          </div>
         
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/p/ed45e794.html" target="_self">
-          <img src="https://z3.ax1x.com/2021/11/09/Itz6PS.jpg" srcset="/img/loading.gif" lazyload alt="湖人赛季观察11: 两安东尼合砍61分 率队加时胜黄蜂">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/p/ed45e794.html" target="_self">
-          湖人赛季观察11: 两安东尼合砍61分 率队加时胜黄蜂
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/p/ed45e794.html" target="_self">
-          
-          
-            
-          
-          湖人：黄蜂兄弟，总有一个队要结束连败的，那为什么不能是我呢？
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-11-09 20:19" pubdate>
-              2021-11-09
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
-            
-              <a href="/categories/Black-Mamba/">Black Mamba</a>
-            
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/NBA/">NBA</a>
-            
-              <a href="/tags/%E6%B9%96%E4%BA%BA/">湖人</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/p/aa0f1413.html" target="_self">
-          <img src="https://z3.ax1x.com/2021/11/09/IYVLuD.png" srcset="/img/loading.gif" lazyload alt="湖人赛季观察: 十年前的神预言 威少就这样了？">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/p/aa0f1413.html" target="_self">
-          湖人赛季观察: 十年前的神预言 威少就这样了？
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/p/aa0f1413.html" target="_self">
-          
-          
-            
-          
-          湖人的问题是全队的责任，但威少的问题依然令人望而生畏。
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-11-09 10:14" pubdate>
-              2021-11-09
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
-            
-              <a href="/categories/Black-Mamba/">Black Mamba</a>
-            
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/NBA/">NBA</a>
-            
-              <a href="/tags/%E6%B9%96%E4%BA%BA/">湖人</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/p/683a4b1c.html" target="_self">
-          <img src="https://z3.ax1x.com/2021/11/09/IYesyT.png" srcset="/img/loading.gif" lazyload alt="将个人博客免费托管在 Netlify 上">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/p/683a4b1c.html" target="_self">
-          将个人博客免费托管在 Netlify 上
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/p/683a4b1c.html" target="_self">
-          
-          
-            
-          
-          简单记录一下将个人博客托管在 Netlify 上的过程。
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-11-07 18:18" pubdate>
-              2021-11-07
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
-            
-              <a href="/categories/%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3/">博客相关</a>
-            
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">博客搭建</a>
-            
-              <a href="/tags/Netlify/">Netlify</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/p/f0660880.html" target="_self">
-          <img src="https://wantwords.thunlp.org/static/image/logo.png" srcset="/img/loading.gif" lazyload alt="清华大学万词王！一款助你准确表达的反向词典">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/p/f0660880.html" target="_self">
-          清华大学万词王！一款助你准确表达的反向词典
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/p/f0660880.html" target="_self">
-          
-          
-            
-          
-          词典你一定用过，但反向词典（Reverse Dictionary）你可能就不一定了解了。
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-11-05 11:44" pubdate>
-              2021-11-05
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
-            
-              <a href="/categories/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/">效率工具</a>
-            
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%8F%8D%E5%90%91%E8%AF%8D%E5%85%B8/">反向词典</a>
-            
-              <a href="/tags/%E8%AF%8D%E5%85%B8/">词典</a>
-            
-              <a href="/tags/%E5%B7%A5%E5%85%B7/">工具</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/p/41b7fe42.html" target="_self">
-          <img src="https://z3.ax1x.com/2021/11/05/Inuzut.jpg" srcset="/img/loading.gif" lazyload alt="湖人赛季观察08：三巨头首次同砍27+ 主场再胜火箭">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/p/41b7fe42.html" target="_self">
-          湖人赛季观察08：三巨头首次同砍27+ 主场再胜火箭
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/p/41b7fe42.html" target="_self">
-          
-          
-            
-          
-          詹姆斯拿下生涯第90次30分+10助攻，湖人再胜火箭。
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-11-03 22:20" pubdate>
-              2021-11-03
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
-            
-              <a href="/categories/Black-Mamba/">Black Mamba</a>
-            
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/NBA/">NBA</a>
-            
-              <a href="/tags/%E6%B9%96%E4%BA%BA/">湖人</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/p/6446f3b7.html" target="_self">
-          <img src="https://z3.ax1x.com/2021/11/05/InKxG4.jpg" srcset="/img/loading.gif" lazyload alt="湖人赛季观察07：甜瓜23分威少准三双 湖人变阵轻取火箭">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/p/6446f3b7.html" target="_self">
-          湖人赛季观察07：甜瓜23分威少准三双 湖人变阵轻取火箭
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/p/6446f3b7.html" target="_self">
-          
-          
-            
-          
-          安东尼替补出场 14 中 8，再一次砍下全队最高的 23 分，威少贡献了 20 分 8 篮板 9 助攻的准三双数据，詹姆斯和浓眉也分别得到 15 分和 16 分。
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-11-01 12:41" pubdate>
-              2021-11-01
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
-            
-              <a href="/categories/Black-Mamba/">Black Mamba</a>
-            
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/NBA/">NBA</a>
-            
-              <a href="/tags/%E6%B9%96%E4%BA%BA/">湖人</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/p/5f1471a.html" target="_self">
-          <img src="https://z3.ax1x.com/2021/10/31/IpI4Qf.jpg" srcset="/img/loading.gif" lazyload alt="湖人赛季观察06：老詹复出砍26分 甜瓜6三分擒骑士">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/p/5f1471a.html" target="_self">
-          湖人赛季观察06：老詹复出砍26分 甜瓜6三分擒骑士
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/p/5f1471a.html" target="_self">
-          
-          
-            
-          
-          詹姆斯宣告复出砍下26分8助攻，帮助湖人以 113-101 击败了骑士。
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-10-31 21:21" pubdate>
-              2021-10-31
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
-            
-              <a href="/categories/Black-Mamba/">Black Mamba</a>
-            
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/NBA/">NBA</a>
-            
-              <a href="/tags/%E6%B9%96%E4%BA%BA/">湖人</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/p/9759ef2e.html" target="_self">
-          <img src="https://z3.ax1x.com/2021/10/28/5ON3Je.jpg" srcset="/img/loading.gif" lazyload alt="湖人赛季观察05：威少三双但10失误 雷霆史诗级逆转">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/p/9759ef2e.html" target="_self">
-          湖人赛季观察05：威少三双但10失误 雷霆史诗级逆转
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/p/9759ef2e.html" target="_self">
-          
-          
-            
-          
-          雷霆阵容的平均年龄比湖人小整整7岁，今天他们给老大哥上了一个叫作骄兵必败的课。
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-10-28 21:11" pubdate>
-              2021-10-28
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
-            
-              <a href="/categories/Black-Mamba/">Black Mamba</a>
-            
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/NBA/">NBA</a>
-            
-              <a href="/tags/%E6%B9%96%E4%BA%BA/">湖人</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/p/4a0682d9.html" target="_self">
-          <img src="https://z3.ax1x.com/2021/10/27/57n7QA.jpg" srcset="/img/loading.gif" lazyload alt="湖人赛季观察04: 老詹缺阵浓眉扛大旗 35+17率队取连胜">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/p/4a0682d9.html" target="_self">
-          湖人赛季观察04: 老詹缺阵浓眉扛大旗 35+17率队取连胜
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/p/4a0682d9.html" target="_self">
-          
-          
-            
-          
-          詹姆斯因伤缺阵，浓眉威少两人合砍68分27篮板，湖人125-121战胜马刺喜迎两连胜。
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-10-27 08:45" pubdate>
-              2021-10-27
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
-            
-              <a href="/categories/Black-Mamba/">Black Mamba</a>
-            
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/NBA/">NBA</a>
-            
-              <a href="/tags/%E6%B9%96%E4%BA%BA/">湖人</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-
-
-  <nav aria-label="navigation">
-    <span class="pagination" id="pagination">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/#board">2</a><a class="page-number" href="/page/3/#board">3</a><a class="extend next" rel="next" href="/page/2/#board"><i class="iconfont icon-arrowright"></i></a>
-    </span>
-  </nav>
-
-
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    
-
-    
-      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
-        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
-      </a>
-    
-
-    
-      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
-     aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
-        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body mx-3">
-        <div class="md-form mb-5">
-          <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v"
-                 for="local-search-input">关键词</label>
-        </div>
-        <div class="list-group" id="local-search-result"></div>
-      </div>
     </div>
-  </div>
+
+    <a href="/p/ed45e794.html">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a>
 </div>
+
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                <h3 class="home-article-title">
+                    <a href="/p/aa0f1413.html">
+                        湖人赛季观察: 十年前的神预言 威少就这样了？
+                    </a>
+                </h3>
+
+                <div class="home-article-content markdown-body">
+                    
+                        湖人赛季第 9 场打雷霆，第 10 场打开拓者，说实话两场我看了一场，也就是打雷霆的那一场，被开拓者血虐的比赛至今还没有下载录像回放来看的想法。
+NBA 球迷圈当中有些俏皮话，是怎么说的，有些球员你看着牙痒痒恨不得他立刻从 NBA 中消失，但当他加入...
+                    
+                </div>
+
+                <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Tue Nov 09 2021 10:14:27 GMT+0800">2021-11-09</span></span>
+        
+        
+    </div>
+
+    <a href="/p/aa0f1413.html">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a>
+</div>
+
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                <h3 class="home-article-title">
+                    <a href="/p/683a4b1c.html">
+                        将个人博客免费托管在 Netlify 上
+                    </a>
+                </h3>
+
+                <div class="home-article-content markdown-body">
+                    
+                        本站目前使用的是 Hexo + GitHub Pages 搭建技术，由基于 Node.js 的静态博客框架 Hexo 渲染生成静态网页，之后将存放着目标文件的 public 文件夹自动同步至 GitHub 仓库中。
+说点儿题外话，我写博文的正常流程是...
+                    
+                </div>
+
+                <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Sun Nov 07 2021 18:18:58 GMT+0800">2021-11-07</span></span>
+        
+        
+    </div>
+
+    <a href="/p/683a4b1c.html">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a>
+</div>
+
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                <h3 class="home-article-title">
+                    <a href="/p/f0660880.html">
+                        清华大学万词王！一款助你准确表达的反向词典
+                    </a>
+                </h3>
+
+                <div class="home-article-content markdown-body">
+                    
+                        词典你一定用过，但反向词典（Reverse Dictionary）你可能就不一定了解了，今天我来介绍一下清华大学旗下实验室出品的免费反向词典——万词王（WantWords）。
+
+万词王由清华大学计算机系自然语言处理与社会人文计算实验室（THUNLP）...
+                    
+                </div>
+
+                <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Fri Nov 05 2021 11:44:44 GMT+0800">2021-11-05</span></span>
+        
+        
+    </div>
+
+    <a href="/p/f0660880.html">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a>
+</div>
+
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                <h3 class="home-article-title">
+                    <a href="/p/41b7fe42.html">
+                        湖人赛季观察08：三巨头首次同砍27+ 主场再胜火箭
+                    </a>
+                </h3>
+
+                <div class="home-article-content markdown-body">
+                    
+                        对阵火箭的第二场比赛果然难度倍增，很大一部分原因就是客队避免了之前那一场的无谓失误，加之火箭全场命中率高达 52.7%，将悬念保留到了终场前，小凯文波特最后的出手也确实有杀死比赛的可能。
+不过湖人还是凭借下半场出色的防守（上半场火箭得 70 分，下半...
+                    
+                </div>
+
+                <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Wed Nov 03 2021 22:20:37 GMT+0800">2021-11-03</span></span>
+        
+        
+    </div>
+
+    <a href="/p/41b7fe42.html">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a>
+</div>
+
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                <h3 class="home-article-title">
+                    <a href="/p/6446f3b7.html">
+                        湖人赛季观察07：甜瓜23分威少准三双 湖人变阵轻取火箭
+                    </a>
+                </h3>
+
+                <div class="home-article-content markdown-body">
+                    
+                        安东尼替补出场 14 中 8，再一次砍下全队最高的 23 分，威少贡献了 20 分 8 篮板 9 助攻的准三双数据，詹姆斯和浓眉也分别得到 15 分和 16 分，湖人从比赛开始 2 分钟之后就再没有落后过，最终 95-85 轻松战胜火箭，将战绩提升至...
+                    
+                </div>
+
+                <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Mon Nov 01 2021 12:41:25 GMT+0800">2021-11-01</span></span>
+        
+        
+    </div>
+
+    <a href="/p/6446f3b7.html">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a>
+</div>
+
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                <h3 class="home-article-title">
+                    <a href="/p/5f1471a.html">
+                        湖人赛季观察06：老詹复出砍26分 甜瓜6三分擒骑士
+                    </a>
+                </h3>
+
+                <div class="home-article-content markdown-body">
+                    
+                        客场惨遭雷霆逆转的湖人又迎来舆论的狂风暴雨，如果主场打骑士再败，恐怕球队的各个环节都会徒增变故，这时詹姆斯显然也坐不住了，直接宣告复出。湖人主教练沃格尔还在赛前，出乎意料地召开全队会议回顾了输给雷霆的那场比赛。最终，湖人以 113-101 击败了骑士...
+                    
+                </div>
+
+                <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Sun Oct 31 2021 21:21:26 GMT+0800">2021-10-31</span></span>
+        
+        
+    </div>
+
+    <a href="/p/5f1471a.html">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a>
+</div>
+
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                <h3 class="home-article-title">
+                    <a href="/p/9759ef2e.html">
+                        湖人赛季观察05：威少三双但10失误 雷霆史诗级逆转
+                    </a>
+                </h3>
+
+                <div class="home-article-content markdown-body">
+                    
+                        看湖人的比赛令人抓狂的时刻过去、未来都不少，但想要超越今天客场打雷霆的这场难度就很大了。上半场还有 3 分 28 秒时，湖人手握 26 分的领先优势，对手是在此之前都还没有赢过球的青年军雷霆，最后却耻辱地以 115-123 输球。
+
+本场 MVP：浓...
+                    
+                </div>
+
+                <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Thu Oct 28 2021 21:11:47 GMT+0800">2021-10-28</span></span>
+        
+        
+    </div>
+
+    <a href="/p/9759ef2e.html">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a>
+</div>
+
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                <h3 class="home-article-title">
+                    <a href="/p/4a0682d9.html">
+                        湖人赛季观察04: 老詹缺阵浓眉扛大旗 35+17率队取连胜
+                    </a>
+                </h3>
+
+                <div class="home-article-content markdown-body">
+                    
+                        詹姆斯因伤缺阵之后，湖人出乎意料地打出了一场好球，赛季第 1 次客场取胜的同时，也将球队战绩提升至 2 胜 2 负，暂时摆脱了开赛初的低迷。威少和浓眉打出了巨星篮球，但马刺的几位年轻人也不遑多让，因此比赛过程也如过山车般跌宕起伏。
+
+本场 MVP：浓...
+                    
+                </div>
+
+                <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Wed Oct 27 2021 08:45:56 GMT+0800">2021-10-27</span></span>
+        
+        
+    </div>
+
+    <a href="/p/4a0682d9.html">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a>
+</div>
+
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                <h3 class="home-article-title">
+                    <a href="/p/b822c6ca.html">
+                        kaggle 数据清洗第一课：处理缺失值
+                    </a>
+                </h3>
+
+                <div class="home-article-content markdown-body">
+                    
+                        本文为 kaggle 平台数据清洗（Data Cleaning）课程第一课讲解部分的编译内容。
+课程总共由五部分组成，即处理缺失值（Handling Missing Values）、数据归一化与标准化（Scaling and Normalizatio...
+                    
+                </div>
+
+                <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Tue Oct 26 2021 10:12:37 GMT+0800">2021-10-26</span></span>
+        
+        
+    </div>
+
+    <a href="/p/b822c6ca.html">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a>
+</div>
+
+            </li>
+        
+    </ul>
+
+    <div class="home-paginator">
+        <div class="paginator">
     
 
     
-  </main>
+        <a class="next btn"
+           href="/page/2/"
+        >下一页</a>
+    
+</div>
 
-  <footer class="text-center mt-5 py-3">
-  <div class="footer-content">
-     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
-  </div>
-  
+    </div>
+</div>
 
-  
 
-  
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+              <span>2020</span>
+              -
+            
+            2022&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">Keep Team</a>
+        </div>
+        
+        <div class="theme-info info-item">
+            由 <a target="_blank" href="https://hexo.io">Hexo</a> 驱动&nbsp;|&nbsp;主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.4.5</a>
+        </div>
+        
+        
+    </div>
 </footer>
 
+        </div>
+    </div>
 
-  <!-- SCRIPTS -->
-  
-  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.js" ></script>
-  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.css" />
+    
 
-  <script>
-    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
-    NProgress.start()
-    window.addEventListener('load', function() {
-      NProgress.done();
-    })
-  </script>
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
 
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
 
-<script  src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" ></script>
-<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.min.js" ></script>
-<script  src="/js/events.js" ></script>
-<script  src="/js/plugins.js" ></script>
+        <li class="tools-item tool-expand-width flex-center">
+            <i class="fas fa-arrows-alt-h"></i>
+        </li>
 
-<!-- Plugins -->
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
 
+        <!-- rss -->
+        
 
-  <script  src="/js/local-search.js" ></script>
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="fas fa-arrow-up"></i>
+            </li>
+        
 
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
 
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+    </ul>
+</div>
 
-  
-    <script  src="/js/img-lazyload.js" ></script>
-  
+    </div>
 
+    
 
-
-  
-
-
-
-
-
-
-
-
-  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2/lib/typed.min.js" ></script>
-  <script>
-    (function (window, document) {
-      var typing = Fluid.plugins.typing;
-      var title = document.getElementById('subtitle').title;
-      
-      typing(title)
-      
-    })(window, document);
-  </script>
-
-
-
+    <div class="image-viewer-container">
+    <img src="">
+</div>
 
 
+    
 
-
-
+</main>
 
 
 
 
 
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
 
 
-<!-- 主题的启动项 保持在最底部 -->
-<script  src="/js/boot.js" ></script>
+
+
+
+
+
+
+<div class="post-scripts">
+    
+</div>
+
 
 
 </body>
