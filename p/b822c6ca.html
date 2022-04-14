@@ -17,13 +17,11 @@
 <link rel="stylesheet" href="/css/style.css">
 
     <link rel="shortcut icon" href="/images/favicon.png">
-    
-<link rel="stylesheet" href="/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/css/font-awesome.min.css">
     <script id="hexo-configurations">
     let KEEP = window.KEEP || {};
     KEEP.hexo_config = {"hostname":"isiahlin.github.io","root":"/","language":"en","path":"search.json"};
-    KEEP.theme_config = {"toc":{"enable":true,"number":false,"expand_all":false,"init_open":true},"style":{"primary_color":"#0066CC","avatar":"/images/avatar.png","favicon":"/images/favicon.png","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":true,"scale":false},"first_screen":{"enable":true,"background_img":"/images/bg.svg","description":"Every day it gets a little easier. But you got to do it every day. That's the hard part."},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":false}}},"local_search":{"enable":true,"preload":false},"code_copy":{"enable":false,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.5"};
+    KEEP.theme_config = {"toc":{"enable":true,"number":false,"expand_all":false,"init_open":true},"style":{"primary_color":"#0066CC","avatar":"/images/avatar.png","favicon":"/images/favicon.png","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":true,"scale":false},"first_screen":{"enable":true,"background_img":"/images/bg.svg","description":"Every day it gets a little easier. But you got to do it every day. That's the hard part."},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":false}}},"local_search":{"enable":true,"preload":false},"code_copy":{"enable":true,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":true},"version":"3.4.5"};
     KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
   </script>
 <meta name="generator" content="Hexo 5.4.2"></head>
@@ -242,23 +240,43 @@
 <p><i>输入：</i></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># 引入所需库</span><br><span class="line">import pandas as pd</span><br><span class="line">import numpy as np</span><br><span class="line"></span><br><span class="line"># 读取数据集</span><br><span class="line">nfl_data = pd.read_csv(&quot;../input/nflplaybyplay2009to2016/NFL Play by Play 2009-2017 (v4).csv&quot;)</span><br><span class="line"></span><br><span class="line"># 设置随机数种子</span><br><span class="line">np.random.seed(0)</span><br></pre></td></tr></table></figure>
 
-<p><i> 输出：</i><br><img src="/images/p18_01.png"></p>
+<p><i> 输出：</i><br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/p18_01.png"
+                     
+                ></p>
 <p>当你拿到一个新的数据时，第一件事就是看看是否成功导入了数据，并且对于该数据集的整体情况有一个基本的认识。如果有缺失值的话，会显示<code>NaN</code>或者<code>None</code>。</p>
 <p><i>输入：</i></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 查看 nfl_data 中前五行数据的情况</span><br><span class="line">nfl_data.head()</span><br></pre></td></tr></table></figure>
 
-<p><i> 输出：</i><br><img src="/images/p18_02.png"></p>
+<p><i> 输出：</i><br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/p18_02.png"
+                     
+                ></p>
 <p>在前五行中，我们就已经发现存在着不少缺失值了。</p>
 <h2 id="Step-2-了解数据缺失情况"><a href="#Step-2-了解数据缺失情况" class="headerlink" title="Step 2: 了解数据缺失情况"></a>Step 2: 了解数据缺失情况</h2><p>我们知道数据集中存在着缺失值，但并不清楚具体数量是多少。接下来我们来查看一下每一列的缺失值数量。</p>
 <p><i>输入：</i></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 计算每一列的缺失值数量</span><br><span class="line">missing_values_count = nfl_data.isnull().sum()</span><br><span class="line"></span><br><span class="line"># 查看前十列的数据值缺失情况</span><br><span class="line">missing_values_count[0:10]</span><br></pre></td></tr></table></figure>
 
-<p><i> 输出：</i><br><img src="/images/p18_03.png"></p>
+<p><i> 输出：</i><br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/p18_03.png"
+                     
+                ></p>
 <p>前十列的数据缺失情况看起来不太理想。如果能够得到缺失值在整个数据集的占比情况，会让我们对整体情况有一个进一步的认识。</p>
 <p><i>输入：</i></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># 数据值总数与缺失值总数</span><br><span class="line">total_cells =np.product(nfl_data.shape)</span><br><span class="line">total_missing = missing_values_count.sum()</span><br><span class="line"></span><br><span class="line"># 缺失值占总体的百分比</span><br><span class="line">percent_missing = (total_missing/total_cells) * 100</span><br><span class="line">print(percent_missing)</span><br></pre></td></tr></table></figure>
 
-<p><i> 输出：</i><br><img src="/images/p18_04.png"></p>
+<p><i> 输出：</i><br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/p18_04.png"
+                     
+                ></p>
 <p>从以上我们可以得知，数据集中将近四分之一的数据值是缺失的。在下一步中，我们具体分析每一列数据值缺失的具体原因。</p>
 <h2 id="Step-3-分析数据缺失的原因"><a href="#Step-3-分析数据缺失的原因" class="headerlink" title="Step 3: 分析数据缺失的原因"></a>Step 3: 分析数据缺失的原因</h2><p>到此我们真正地进入了“数据科学”的部分，这意味着：深入观察你的数据，并试图弄清楚它为什么是这样的，以及这将如何影响你的分析。</p>
 <p>这可能是数据科学中令人不知如何下手的部分，特别是如果你还只是这个领域里没有多少数据分析经验的新手。</p>
@@ -272,7 +290,12 @@
 <p><i>输入：</i></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 查看前十列的数值缺失情况</span><br><span class="line">missing_values_count[0:10]</span><br></pre></td></tr></table></figure>
 
-<p><i> 输出：</i><br><img src="/images/p18_05.png"></p>
+<p><i> 输出：</i><br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/p18_05.png"
+                     
+                ></p>
 <p>通过查看原始数据的文档，我们了解到“TimesSec”这一列代表的是回合结束时，比赛时间还剩多少秒。也就意味着，数值缺失不是因为它不存在，而是因为没有记录到。因此，我们有必要尝试猜测它们的数值应该是什么，而不是将其当做<code>NA</code>。</p>
 <p>另外，有一些列比如说“PenalizedTeam”也存在着缺失值，而这一列代表的是被罚的球队，如果场上没有出现判罚情况的话，这一栏出现缺失值是正常的。不过，如果将其置空或者添加表示对阵双方都没有被罚情况的“neither”以代替缺失值会让数据看起来更容易理解。</p>
 <blockquote>
@@ -285,32 +308,62 @@
 <p><i>输入：</i></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 删除所有存在缺失值的行</span><br><span class="line">nfl_data.dropna()</span><br></pre></td></tr></table></figure>
 
-<p><i> 输出：</i><br><img src="/images/p18_06.png"></p>
+<p><i> 输出：</i><br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/p18_06.png"
+                     
+                ></p>
 <p>结果看起来不妙，这个操作移除了所有的数据。这是因为每一行总都至少存在一个缺失值。我们再来试试删除所有存在缺失值的列。</p>
 <p><i>输入：</i></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 删除所有存在缺失值的列</span><br><span class="line">columns_with_na_dropped = nfl_data.dropna(axis=1)</span><br><span class="line">columns_with_na_dropped.head()</span><br></pre></td></tr></table></figure>
 
-<p><i> 输出：</i><br><img src="/images/p18_07.png"></p>
+<p><i> 输出：</i><br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/p18_07.png"
+                     
+                ></p>
 <p><i>输入：</i></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 看看我们移除了多少列的数据</span><br><span class="line">print(&quot;Columns in original dataset: %d \n&quot; % nfl_data.shape[1])</span><br><span class="line">print(&quot;Columns with na&#x27;s dropped: %d&quot; % columns_with_na_dropped.shape[1])</span><br></pre></td></tr></table></figure>
 
-<p><i> 输出：</i><br><img src="/images/p18_08.png"></p>
+<p><i> 输出：</i><br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/p18_08.png"
+                     
+                ></p>
 <p>这么一看，我们移除了一大半的数据，不过与此同时，所有的<code>NaN</code>数据项也在我们的数据集中消失了。</p>
 <h2 id="Step-5-自动补齐缺失值"><a href="#Step-5-自动补齐缺失值" class="headerlink" title="Step 5: 自动补齐缺失值"></a>Step 5: 自动补齐缺失值</h2><p>除了移除缺失值，还有一个办法就是将它们补齐。为了展示方便，我们接下来只取 NFL 数据集中的一部分来进行操作。</p>
 <p><i>输入：</i></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 取得NFL数据集中的一个子集</span><br><span class="line">subset_nfl_data = nfl_data_loc[:, &#x27;EPA&#x27;:&#x27;Seanson&#x27;].head()</span><br><span class="line">subset_nfl_data</span><br></pre></td></tr></table></figure>
 
-<p><i> 输出：</i><br><img src="/images/p18_09.png"></p>
+<p><i> 输出：</i><br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/p18_09.png"
+                     
+                ></p>
 <p>我们可以使用 Pandas 的一项功能 <code>fillna()</code>来填补缺失值。首先，我们可以指定一个值来替换<code>NaN</code>。比如说，我们将所有的<code>NaN</code>都用 0 替换。</p>
 <p><i>输入：</i></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 用0替换所有的缺失值</span><br><span class="line">subset_nfl_data.fillna(0)</span><br></pre></td></tr></table></figure>
 
-<p><i> 输出：</i><br><img src="/images/p18_10.png"></p>
+<p><i> 输出：</i><br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/p18_10.png"
+                     
+                ></p>
 <p>我们还可以更聪明一些，直接用同一列中排在它后面的任意值来替换缺失的那个数据（这对于数值具有某种逻辑顺序的数据集来说是很有用的）。</p>
 <p><i>输入：</i></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 用同一列中排在下一位的数值替换缺失值</span><br><span class="line"># 然后用0替换剩余所有的缺失值</span><br><span class="line">subset_nfl_data.fillna(method=&#x27;bfill&#x27;, axis=0).fillna(0)</span><br></pre></td></tr></table></figure>
 
-<p><i> 输出：</i><br><img src="/images/p18_11.png"></p>
+<p><i> 输出：</i><br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/p18_11.png"
+                     
+                ></p>
 
         </div>
 
@@ -389,6 +442,85 @@
         
 
         
+            <div class="comment-container">
+                <div class="comments-container">
+    <div id="comment-anchor"></div>
+    <div class="comment-area-title">
+        <i class="fas fa-comments">&nbsp;Comments</i>
+    </div>
+    
+
+        
+            
+    <div class="valine-container">
+        <script 
+                src="//cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"></script>
+        <div id="vcomments"></div>
+        <script >
+            function loadValine() {
+                new Valine({
+                    el: '#vcomments',
+                    appId: 'fbQ1bamGCTVosb3AsXoCJMbk-gzGzoHsz',
+                    appKey: 'yyEe8NWLmczrWhJ3TNS4AwFq',
+                    meta: ['nick', 'mail', 'link'],
+                    avatar: 'wavatar',
+                    enableQQ: true,
+                    placeholder: '一起来聊聊吧~',
+                    lang: 'en'.toLowerCase()
+                });
+
+                function getAuthor(language) {
+                    switch (language) {
+                        case 'en':
+                            return 'Author';
+                        case 'zh-CN':
+                            return '博主';
+                        default:
+                            return 'Master';
+                    }
+                }
+
+                // Add "Author" identify
+                const getValineDomTimer = setInterval(() => {
+                    const vcards = document.querySelectorAll('#vcomments .vcards .vcard');
+                    if (vcards.length > 0) {
+                        let author = 'Zhicheng';
+
+                        if (author) {
+                            for (let vcard of vcards) {
+                                const vnick_dom = vcard.querySelector('.vhead .vnick');
+                                const vnick = vnick_dom.innerHTML;
+                                if (vnick === author) {
+                                    vnick_dom.innerHTML = `${vnick} <span class="author">${getAuthor(KEEP.hexo_config.language)}</span>`
+                                }
+                            }
+                        }
+                        clearInterval(getValineDomTimer);
+                    } else {
+                        clearInterval(getValineDomTimer);
+                    }
+                }, 2000);
+            }
+
+            if ('false') {
+                const loadValineTimeout = setTimeout(() => {
+                    loadValine();
+                    clearTimeout(loadValineTimeout);
+                }, 1000);
+            } else {
+                window.addEventListener('DOMContentLoaded', loadValine);
+            }
+        </script>
+    </div>
+
+
+
+        
+    
+</div>
+
+            </div>
+        
     </div>
 </div>
 
@@ -433,6 +565,10 @@
         
 
         <!-- go comment -->
+        
+            <li class="go-comment">
+                <i class="fas fa-comment"></i>
+            </li>
         
     </ul>
 </div>
@@ -533,37 +669,23 @@
 
 
 
+<script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/utils.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/main.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/header-shrink.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/back2top.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/dark-light-toggle.js"></script>
 
-<script src="/js/utils.js"></script>
 
-<script src="/js/main.js"></script>
-
-<script src="/js/header-shrink.js"></script>
-
-<script src="/js/back2top.js"></script>
-
-<script src="/js/dark-light-toggle.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/local-search.js"></script>
 
 
 
-    
-<script src="/js/local-search.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/code-copy.js"></script>
 
 
 
-
-
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/lazyload.js"></script>
 
 
 <div class="post-scripts">
     
-        
-<script src="/js/left-side-toggle.js"></script>
-
-<script src="/js/libs/anime.min.js"></script>
-
-<script src="/js/toc.js"></script>
-
+        <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/left-side-toggle.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/libs/anime.min.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/toc.js"></script>
     
 </div>
 
